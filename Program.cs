@@ -10,11 +10,19 @@ class Program
         var c = new ImpresoraCopiadora();
         Console.WriteLine(c.Copiar("Estou estudando C#"));
 
+        var e = new ImpressoraEscaneadora();
+        Console.WriteLine(e.Escanear("Estou estudando C#"));
+
+        var m = new ImpressoraMultifuncional();
+        Console.WriteLine(m.Escanear("Estou estudando C#"));
+        Console.WriteLine(m.Imprimir("Estou estudando C#"));
+        Console.WriteLine(m.Copiar("Estou estudando C#"));
+
         CopiarDocumento(new Xerox(), "Estou estudando C#");
     }
 
     public static void CopiarDocumento(Icopiadora c, string texto)
     {
-        Console.WriteLine("Estou copiando o texto a seguir:" + c.Copiar(texto));
+        Console.WriteLine("" + c.Copiar(texto));
     }
 }
