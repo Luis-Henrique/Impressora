@@ -6,5 +6,8 @@ class Program
     {
         var i = new ImpresoraComum();
         Console.WriteLine(i.Imprimir("Estou estudando C#"));
+
+        var c = new ImpresoraCopiadora();
+        Console.WriteLine(c.Copiar("Estou estudando C#"));
     }
 }
